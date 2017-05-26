@@ -13,8 +13,10 @@ try {
 
     $resp = $client->getRoom("testroom");
     print_r($resp);
- $resp=$client->kickingPlayer("testroom","qiniu-f6e07b78-4dc8-45fb-a701-a9e158abb8e6");
-    $resp3=$client->getRoomUserNum("testroom");
+    $resp=$client->kickingPlayer("testroom","qiniu-f6e07b78-4dc8-45fb-a701-a9e158abb8e6");
+    print_r($resp);
+    $resp=$client->getRoomUserNum("testroom");
+    print_r($resp);
     $resp = $client->deleteRoom("testroom");
     print_r($resp);
 
